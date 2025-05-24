@@ -5,7 +5,9 @@ WORKDIR /app
 # Copy PocketBase binary and your data
 COPY pocketbase /app/pocketbase
 COPY pb_data /app/pb_data
+COPY pb_migrations /app/pb_migrations
 COPY start.sh /app/start.sh
+
 
 # Make sure start.sh and pocketbase are executable
 RUN chmod +x /app/start.sh /app/pocketbase
